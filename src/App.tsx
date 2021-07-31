@@ -1,16 +1,14 @@
 import React from 'react';
-import Navigation from './Components/Navigation';
 import avatar from './assets/avataaars.png';
 
 const App = (): JSX.Element => {
   return (
     <div className="App">
-      <Navigation />
       <header className="App-header">
         <img className='avatar' src={avatar} alt='Profile Avatar' />
         <h1 className='name-headline'>Preston Davis</h1>
-        <p className='quick-about'>Follower of Christ. Lover of coffee. Builder of things.</p>
-        <p style={{ fontSize: '.8rem'}}>(this site is under construction. please bear with me)</p>
+        <p className='quick-about'>Follower of Christ. Software Engineer. Coffee Enthusiast.</p>
+        <p className='placeholder'>This is a placeholder page until the site is finished :)</p>
       </header>
     </div>
   );
