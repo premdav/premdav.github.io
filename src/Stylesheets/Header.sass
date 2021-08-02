@@ -9,9 +9,7 @@
   left: 0
   z-index: -1000
 
-
 .App-header
-  height: 75%
   padding-top: 15vh
   display: flex
   flex-direction: column
@@ -80,7 +78,47 @@
   font-size: .75rem
   color: $french-lilac
 
+.icon-scroll,
+.icon-scroll:before
+  position: absolute
+  left: 50%
+
+.icon-scroll
+  width: 30px
+  height: 50px
+  margin-left: -15px
+  bottom: 5%
+  box-shadow: inset 0 0 0 1px $sage-green
+  border-radius: 25px
+
+.icon-scroll:before
+  content: ''
+  width: 5px
+  height: 5px
+  background: linear-gradient(45deg, $sea-green, $sage-green)
+  margin-left: -2px
+  top: 8px
+  border-radius: 4px
+  animation-duration: 1.5s
+  animation-iteration-count: infinite
+  animation-name: scroll
+
+@keyframes scroll
+  0%
+    opacity: 1
+  100%
+    opacity: 0
+    transform: translateY(25px)
+
 @media only screen and (max-width: 576px)
   .App-header
     text-align: center
+
+@media only screen and (max-height: 740px)
+  .icon-scroll
+    bottom: 3%
+  
+@media only screen and (max-height: 688px)
+  .icon-scroll
+    display: none
   

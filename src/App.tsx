@@ -1,6 +1,7 @@
 import React from 'react';
 import Particles from 'react-particles-js';
 import Header from './Components/Header';
+import About from './Components/About';
 
 const particleOptions = {
   "particles": {
