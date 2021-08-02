@@ -1,11 +1,11 @@
 import React from 'react';
 import Particles from 'react-particles-js';
-import avatar from './assets/avataaars.png';
+import Header from './Components/Header';
 
 const particleOptions = {
   "particles": {
       "number": {
-          "value": 60,
+          "value": 100,
           "density": {
               "enable": true,
               "value_area": 1500
@@ -52,12 +52,7 @@ const App = (): JSX.Element => {
       <Particles className='particles'
         params={particleOptions as any}
       />
-      <header className="App-header">
-        <img className='avatar' src={avatar} alt='Profile Avatar' />
-        <h1 className='name-headline'>Preston Davis</h1>
-        <p className='quick-about'>Follower of Christ. Software Engineer. Coffee Enthusiast.</p>
-        <p className='placeholder'>This is a placeholder page until the site is finished :)</p>
-      </header>
+      <Header />
     </div>
   );
 }
