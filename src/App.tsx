@@ -2,6 +2,7 @@ import React from 'react';
 import Particles from 'react-particles-js';
 import Header from './Components/Header';
 import About from './Components/About';
+import Projects from './Components/Projects';
 
 const particleOptions = {
   "particles": {
@@ -54,6 +55,8 @@ const App = (): JSX.Element => {
         params={particleOptions as any}
       />
       <Header />
+      <About />
+      {/* <Projects /> */}
     </div>
   );
 }
