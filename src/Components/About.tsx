@@ -19,7 +19,7 @@ const randomStats = [
     minorInfo: 'Favorite Framework/Library'
   },
   {
-    mainInfo: '5',
+    mainInfo: '6',
     minorInfo: 'Countries Visited'
   }
 ];
