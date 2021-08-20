@@ -3,6 +3,7 @@ import Particles from 'react-particles-js';
 import Header from './Components/Header';
 import About from './Components/About';
 import Projects from './Components/Projects';
+import Footer from './Components/Footer';
 
 const particleOptions = {
   "particles": {
@@ -57,6 +58,7 @@ const App = (): JSX.Element => {
       <Header />
       <About />
       {/* <Projects /> */}
+      <Footer />
     </div>
   );
 }
