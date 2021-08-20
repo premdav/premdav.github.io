@@ -6,7 +6,7 @@ const Header = () => (
     <img className='avatar' src={avatar} alt='Profile Avatar' />
     <h1 className='name-headline'>Preston Davis</h1>
     <p className='quick-about'>Follower of Christ. Software Engineer. Coffee Enthusiast.</p>
-    <div className='icon-scroll'></div>
+    {/* <div className='icon-scroll'></div> */}
   </header>
 );
 
