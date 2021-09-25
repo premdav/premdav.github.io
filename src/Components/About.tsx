@@ -2,8 +2,8 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import StatCard from './StatCard';
 
-const renderCards = (stats: any) => {
-  const cards = stats.map((stat: any) => <StatCard data={stat} />);
+const renderCards = (stats: { mainInfo: string, minorInfo: string }[]) => {
+  const cards = stats.map((stat: { mainInfo: string, minorInfo: string }, i) => <StatCard key={i} data={stat} />);
   return <>{cards}</>
 }
 
@@ -20,7 +20,7 @@ const About = () => {
       minorInfo: 'Started Programming'
     },
     {
-      mainInfo: ghFollowers,
+      mainInfo: ghFollowers.toString(),
       minorInfo: 'Github Followers'
     },
     {
@@ -36,7 +36,7 @@ const About = () => {
   useEffect(() => {
     axios.get('https://api.github.com/users/premdav').then((res) => {
       setGhFollowers(res.data.followers);
-    })
+    });
   }, []);
 
   return (
