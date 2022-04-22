@@ -12,7 +12,7 @@ const About = () => {
 
   const randomStats = [
     {
-      mainInfo: '2.5',
+      mainInfo: '3',
       minorInfo: 'Years of Professional Experience'
     },
     {
@@ -28,8 +28,8 @@ const About = () => {
       minorInfo: 'Favorite Framework/Library'
     },
     {
-      mainInfo: '6',
-      minorInfo: 'Countries Visited'
+      mainInfo: '12',
+      minorInfo: 'States Visited in 2022'
     }
   ];
 
@@ -45,9 +45,10 @@ const About = () => {
       <div className='section-underline'></div>
       <div className='section-content'>
         <p>
-          Hey, I'm Preston! A software engineer, leading a team of 7, at Valcom, Inc. I work heavily in 
-          React, React Native, Node, and Python to build web and mobile applications for internal use and also for our emergency notification platforms.
-          When I am not working, I enjoy building out side projects, hanging out with family, and I absolutely love to travel.
+          Hey I'm Preston, software engineer currently leading a team of 7 at Valcom. I work heavily in 
+          React, React Native, Node, and Python to build web and mobile applications across an array of projects.
+          When I am not working, I enjoy hanging out with family, playing games with friends, and traveling. My goal for the 
+          next couple of years is to visit all 50 states and start living the full "digital nomad" life by traveling year round.
         </p>
       </div>
       <h2 className='section-heading'>Random Stats</h2>
